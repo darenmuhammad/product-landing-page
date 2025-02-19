@@ -66,6 +66,7 @@ main {
     align-items: center;
     gap: 2rem;
     margin: 2rem auto;
+    text-align: center;
 }
 
 form {
@@ -127,6 +128,7 @@ form {
     grid-template-columns: repeat(3, 30rem);
     justify-content: space-between;
     font-size: 1.5rem;
+    gap: 2rem;
 }
 
 .box {
@@ -185,4 +187,18 @@ footer ul {
 
 footer p {
     color: #676767;
+}
+
+@media (max-width: 1024px) {
+    #pricing {
+        grid-template-columns: repeat(2, 30rem);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 769px) {
+    #pricing {
+        grid-template-columns: repeat(1, 30rem);
+        justify-content: center;
+    }
 }
